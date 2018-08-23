@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    float salario, ct1, ct2; 
+
+    printf("Digite o seu salario: ");
+    scanf("%f", &salario);
+    printf("Digite o valor da primeira conta: ");
+    scanf("%f", &ct1);
+    printf("Digite o valor da segunda conta: ");
+    scanf("%f", &ct2);
+    
+    ct1 = ct1 + ct1 * 2 / 100;
+
+    ct2 = ct2 + ct2 * 2 / 100; 
+
+    printf("\nSalario:   R$ %.2f ", salario);
+    printf("\nConta:      R$ %.2f ", ct1);
+    printf("\nConta:      R$ %.2f ", ct2);
+
+    printf("\nO restante do seu salario eh:  R$ %.2f \n\n", salario - ct1 - ct2);
+    
+}
