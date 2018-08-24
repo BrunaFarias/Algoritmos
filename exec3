@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/*faca um programa que receba o peso de uma pessoa, calcule e mostre:
+a) o novo peso se a pessoa engordar 15% sobre o peso digitado;
+b) o novo peso se a pessoa emagrecer 20% sobre o peso digitado;*/
+
+int main()
+{
+	float peso, fofao, palito;
+
+    printf("Digite seu peso");
+    printf("\nPeso: ");
+    scanf("%f", &peso); 
+    
+    fofao = peso* 0.15;
+    fofao = fofao + peso;
+    palito = peso * 0.20;
+    palito = peso - palito;
+    
+    printf("\nPeso inicial: %.2f quilos. ", peso);
+    printf("\nSe engordar 0.15g vamos fechar a boca: %.2f", fofao);
+    printf("\nSe emagrecer 0.20g parabens vc ficou so o palito: %.2f", palito);
+    
+}
