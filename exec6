@@ -1,0 +1,26 @@
+int main()
+{
+	float ap1, ap2, ap3;
+	float mPonderada=0;
+	int presenca;
+
+	printf("Digite a nota da ap1:");
+	scanf("%f", &ap1 );
+	printf("Digite a nota da ap2:");
+	scanf("%f", &ap2 );
+	printf("Digite a nota da ap3:");
+	scanf("%f", &ap3 );
+	printf("Digite o percentual do aluno:");
+	scanf("%d", &presenca );
+	
+	mPonderada = (3*ap1 + 3*ap2 + 4*ap3)/10;
+
+	printf("A media do aluno eh: %.2f",mPonderada );
+	
+    if ((mPonderada >= 5) && (presenca >= 70))
+    printf("\nAluno aprovado!");
+    
+    else
+    printf("\nAluno reprovado!");
+return 0;
+}
