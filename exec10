@@ -1,0 +1,43 @@
+int main()
+{
+	int x,y,op;
+	int soma,sub,mult;
+	float divs;
+	
+	printf("Escolha a opcao desejada para fazer a operacao: \nDigite 1 p/ soma \nDigite 2 p/ subtracao \nDigite 3 p/ multiplicacao \nDigite 4 p/ divisao \n");
+	scanf("%d", &op);
+	printf("Digite o primeiro valor para realizar a operacao: ");
+	scanf("%d", &x);
+	printf("Digite o segundo valor para realizar a operacao: ");
+	scanf("%d", &y);
+	
+	switch (op){
+	    
+	    case 1:
+	    soma = x+y;
+	    printf("O resultado da soma eh: %d", soma);
+	    break;
+	    
+	    case 2:
+	    sub = x-y;
+	    printf("O resultado da subtracao eh: %d", sub);
+	    break;
+	    
+	    case 3:
+	    mult = x*y;
+	    printf("O resultado da multiplicacao eh: %d", sub);
+	    break;
+	    
+	    case 4:
+	   
+	    divs = x/y;
+	    printf("O resultado da divisao eh: %.2f", divs);
+	    break;
+	    
+	}
+	
+	
+	
+	
+return 0;
+}
