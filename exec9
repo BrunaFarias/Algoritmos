@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+     int idade;
+     
+       printf("Digite a Idade do Nadador = ");
+       scanf("%d",&idade);
+       if((idade>=5)&&(idade<=7))
+         printf("Nadador 'INFANTIL - A'.");
+       if((idade>=8)&&(idade<=11))
+         printf("Nadador 'INFANTIL - B'.");
+       if((idade>=12)&&(idade<=13))
+         printf("Nadador 'JUVENIL - A'.");
+       if((idade>=14)&&(idade<=17))
+         printf("Nadador 'JUVENIL - B'.");
+       if((idade>=18)&&(idade<=25))
+         printf("Nadador 'ADULTO'.");
+       if((idade<5)^(idade>25))
+         printf("'Idade Fora de Faixa'");
+         
+}
