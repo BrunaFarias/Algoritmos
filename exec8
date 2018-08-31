@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+    int p1, p2, p3, p4, p5, resultado;
+
+    printf ("Digite: 1 - SIM / 0 - NAO\n\n");
+
+    printf("Telefonou para a vitima? \n");
+    scanf("%d", &p1);
+    printf ("Esteve no local do crime? \n");
+    scanf("%d", &p2);
+    printf ("Mora perto da vitima? \n");
+    scanf("%d", &p3);
+    printf ("Devia para a vitima? \n");
+    scanf ("%d", &p4);
+    printf ("Ja trabalhou com a vitima? \n");
+    scanf ("%d", &p5);
+
+    resultado = p1 + p2 + p3 + p4 + p5;
+
+    switch (resultado){
+
+case 2:
+
+    printf ("SUSPEITO!");
+    break;
+
+case 3:
+
+    printf ("CUMPLICE");
+    break;
+
+case 4:
+
+    printf ("CUMPLICE");
+    break;
+
+case 5:
+
+    printf ("ASSASSINO");
+    break;
+
+    }
+
+}
